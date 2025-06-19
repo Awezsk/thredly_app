@@ -3,6 +3,9 @@
 
 import { authMiddleware } from "@clerk/nextjs";
 
+export const runtime = "nodejs";
+// ...rest of your code
+
 export default authMiddleware({
   // An array of public routes that don't require authentication.
   publicRoutes: ["/api/webhook/clerk"],
