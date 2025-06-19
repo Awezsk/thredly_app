@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Inter, Limelight } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Neobrutalism } from "@clerk/themes";
+import { dark } from "@clerk/themes";
 
 import "../globals.css";
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <ClerkProvider
       appearance={{
-        baseTheme: Neobrutalism,
+        baseTheme: dark,
         variables: {
           colorPrimary: '#0ea5e9', // You can customize primary color
           colorBackground: '#ffffff',
